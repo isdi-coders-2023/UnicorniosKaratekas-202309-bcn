@@ -1,17 +1,18 @@
 import AppStyled from "./AppStyled";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "../../pages/HomePage/HomePage";
+import Header from "../Header/Header";
 
 const App = (): React.ReactElement => {
   return (
     <>
-      <BrowserRouter>
+      <Header />
+      <AppStyled>
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePage />} />
-          <AppStyled />
         </Routes>
-      </BrowserRouter>
+      </AppStyled>
     </>
   );
 };
