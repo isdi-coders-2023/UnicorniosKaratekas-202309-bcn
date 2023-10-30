@@ -7,6 +7,7 @@ const HeaderStyled = styled.div`
 
   .header {
     width: 100%;
+    height: auto;
     position: absolute;
 
     &--primary {
