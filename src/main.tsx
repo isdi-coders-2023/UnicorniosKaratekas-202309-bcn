@@ -6,14 +6,17 @@ import { ThemeProvider } from "styled-components";
 import "@fontsource/libre-baskerville";
 import GlobalStyle from "./styles/GlobalStyle";
 import mainTheme from "./styles/mainTheme";
+import UnicornProviderWrapper from "./components/features/unicorns/store/UnicornProviderWrapper";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ThemeProvider theme={mainTheme}>
-        <GlobalStyle />
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
+    <UnicornProviderWrapper>
+      <BrowserRouter>
+        <ThemeProvider theme={mainTheme}>
+          <GlobalStyle />
+          <App />
+        </ThemeProvider>
+      </BrowserRouter>
+    </UnicornProviderWrapper>
   </React.StrictMode>,
 );
