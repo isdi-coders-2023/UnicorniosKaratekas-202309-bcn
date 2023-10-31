@@ -158,7 +158,7 @@ const Header = () => {
       </svg>
       <img
         className="logo-image"
-        src="../../public/images/myLittlePadding.png"
+        src="/images/myLittlePadding.png"
         alt="My Little Padding Logo"
         width="144"
         height="132"
