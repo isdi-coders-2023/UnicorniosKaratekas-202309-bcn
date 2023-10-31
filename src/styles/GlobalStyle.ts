@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   margin: 0;
-  background-image: url("/images/background.png");
+  background-image: url("/images/background.webp");
   background-repeat: repeat-y;
   background-size: cover;
 }
