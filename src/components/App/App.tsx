@@ -10,8 +10,8 @@ const App = (): React.ReactElement => {
       <Header />
       <AppStyled>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<UnicornListPage />} />
+          <Route path="/" element={<Navigate to="/unicorns" />} />
+          <Route path="/unicorns" element={<UnicornListPage />} />
         </Routes>
       </AppStyled>
       <NavMenu />
