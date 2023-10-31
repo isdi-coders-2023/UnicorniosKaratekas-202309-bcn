@@ -1,5 +1,5 @@
 const HomePage = (): React.ReactElement => {
-  return <></>;
+  return <h1>Unicorns List</h1>;
 };
 
 export default HomePage;
