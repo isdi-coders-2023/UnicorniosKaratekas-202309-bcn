@@ -7,26 +7,14 @@ const HeaderStyled = styled.div`
 
   .header {
     width: 100%;
-    height: auto;
+    height: 190px;
     position: absolute;
-
-    &--primary {
-      z-index: 3;
-    }
-
-    &--secondary {
-      z-index: 2;
-      margin-top: -130px;
-    }
-
-    &--terciary {
-      margin-top: -130px;
-    }
   }
 
   .logo-image {
-    z-index: 4;
-    position: relative;
+    z-index: 2;
+    width: 190px;
+    height: auto;
     margin-top: 20px;
   }
 `;
