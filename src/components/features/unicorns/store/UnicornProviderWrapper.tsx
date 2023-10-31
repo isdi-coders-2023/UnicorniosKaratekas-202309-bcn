@@ -1,4 +1,4 @@
-import { PropsWithChildren, useCallback, useState } from "react";
+import { PropsWithChildren, useCallback, useMemo, useState } from "react";
 import { Unicorn } from "../../../../types";
 import UnicornContext from "./UnicornContext";
 
@@ -7,12 +7,17 @@ const UnicornProviderWrapper = ({
 }: PropsWithChildren): React.ReactElement => {
   const [unicorns, setUnicorns] = useState<Unicorn[]>([]);
 
-  const loadUnicorns = useCallback((uniconrs: Unicorn[]) => {
-    setUnicorns(uniconrs);
+  const loadUnicorns = useCallback((unicorns: Unicorn[]) => {
+    setUnicorns(unicorns);
   }, []);
 
+  const unicornsProvider = useMemo(
+    () => ({ unicorns, loadUnicorns }),
+    [unicorns, loadUnicorns],
+  );
+
   return (
-    <UnicornContext.Provider value={{ unicorns, loadUnicorns }}>
+    <UnicornContext.Provider value={unicornsProvider}>
       {children}
     </UnicornContext.Provider>
   );
