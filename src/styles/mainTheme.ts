@@ -9,7 +9,8 @@ const mainTheme: DefaultTheme = {
     lilac: "#d6caf0",
   },
   typography: {
-    family: "libre-baskerville",
+    mainFontFamily: "Libre Baskerville",
+    secondaryFontFamily: "Lilita One",
     dark: "#361e58",
     light: "#6843bc",
     white: "#ffffff",
