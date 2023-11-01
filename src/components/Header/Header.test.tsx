@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Header from "./Header";
-import UnicornProviderWrapper from "../features/unicorns/store/UnicornProviderWrapper";
+import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
 
 describe("Given a Header component", () => {
   describe("When it's rendered", () => {
