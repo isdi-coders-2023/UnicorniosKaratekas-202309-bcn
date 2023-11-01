@@ -24,7 +24,7 @@ const NavMenu = (): React.ReactElement => {
       <img
         className="background-image"
         src="/images/nav-background.svg"
-        alt="background"
+        alt="navigation menu background"
         width="500"
         height="95"
       />
