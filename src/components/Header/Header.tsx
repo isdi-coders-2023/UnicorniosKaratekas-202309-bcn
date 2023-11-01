@@ -3,13 +3,11 @@ import HeaderStyled from "./HeaderStyled";
 const Header = () => {
   return (
     <HeaderStyled>
-      <img
-        className="header"
-        alt="Header coloured waves"
-        src="images/header.webp"
-        width="390"
-        height="148"
-      />
+      <div className="header-background">
+        <div className="corner-left"></div>
+        <div className="middle"></div>
+        <div className="corner-right"></div>
+      </div>
       <img
         className="logo-image"
         src="/images/myLittlePadding.webp"

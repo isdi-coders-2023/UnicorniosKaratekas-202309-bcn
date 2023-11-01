@@ -5,6 +5,10 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+html {
+  font-family: ${({ theme }) => theme.typography.mainFontFamily};
+}
+
 body {
   margin: 0;
   background-image: url("/images/background.webp");
@@ -37,5 +41,14 @@ h2 {
 button {
    cursor: pointer;
 }
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 `;
+
 export default GlobalStyle;

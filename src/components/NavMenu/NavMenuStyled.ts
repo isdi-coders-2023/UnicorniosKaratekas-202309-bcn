@@ -1,27 +1,32 @@
 import styled from "styled-components";
 
-const NavMenuStyled = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  .nav-background {
-    width: 100%;
-    position: absolute;
-  }
-
-  .nav-container {
+const NavMenuStyled = styled.nav`
+  .button-container {
     display: flex;
-    justify-content: center;
-    gap: 90px;
-    z-index: 1;
-    margin: 26px 0 0 10px;
+    width: 100%;
+    height: 95px;
+    background-image: url(/images/navBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    background-position: center;
+    align-items: center;
   }
 
   .button {
+    height: 45px;
+  }
+
+  .icon {
     color: #361e58;
     width: 45px;
-    height: 45px;
+  }
+
+  .active {
+    border-bottom: solid 4px #361e58;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 3px;
   }
 `;
 
