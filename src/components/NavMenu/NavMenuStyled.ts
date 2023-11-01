@@ -33,7 +33,7 @@ const NavMenuStyled = styled.div`
     color: #361e58;
     width: 45px;
   }
-  .icon__line {
+  .active {
     border-bottom: solid 4px #361e58;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
