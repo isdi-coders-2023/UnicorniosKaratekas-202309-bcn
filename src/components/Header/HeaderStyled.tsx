@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-const HeaderStyled = styled.div`
+const HeaderStyled = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;
 
   .header {
-    width: 100%;
+    width: 500px;
     height: 190px;
     position: absolute;
   }

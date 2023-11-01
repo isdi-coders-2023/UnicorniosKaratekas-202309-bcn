@@ -10,7 +10,8 @@ declare module "styled-components" {
       lilac: string;
     };
     typography: {
-      family: string;
+      mainFontFamily: string;
+      secondaryFontFamily: string;
       dark: string;
       light: string;
       white: string;
