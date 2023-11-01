@@ -4,6 +4,8 @@ import App from "./components/App/App";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import "@fontsource/libre-baskerville";
+import "@fontsource/libre-baskerville/400.css";
+import "@fontsource/libre-baskerville/400-italic.css";
 import GlobalStyle from "./styles/GlobalStyle";
 import mainTheme from "./styles/mainTheme";
 import UnicornProviderWrapper from "./components/features/unicorns/store/UnicornProviderWrapper";
