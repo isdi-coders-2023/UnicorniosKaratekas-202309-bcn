@@ -14,13 +14,13 @@ const NavMenuStyled = styled.div`
     gap: 120px;
     height: 100%;
     z-index: 2;
+    margin-bottom: 10px;
   }
 
   .background-image {
     width: 500px;
     height: 100px;
-    position: absolute;
-    top: 0;
+    position: fixed;
     margin-top: -30px;
     object-fit: cover;
   }
