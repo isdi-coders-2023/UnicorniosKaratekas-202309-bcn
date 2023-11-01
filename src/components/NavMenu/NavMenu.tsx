@@ -10,13 +10,13 @@ const NavMenu = (): React.ReactElement => {
       <div className="button-container">
         <NavLink
           className={`icon ${pathname === "/unicorns" ? "icon__line" : ""}`}
-          to={"/unicorns"}
+          to="/unicorns"
         >
           <FontAwesomeIcon className="icon button" icon={faHouse} />
         </NavLink>
         <NavLink
           className={`icon ${pathname === "/" ? "icon__line" : ""}`}
-          to={"/"}
+          to="/"
         >
           <FontAwesomeIcon className="icon button" icon={faPlus} />
         </NavLink>
