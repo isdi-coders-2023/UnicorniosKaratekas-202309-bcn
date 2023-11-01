@@ -12,7 +12,7 @@ describe("Given a Button component", () => {
 
   describe("When it receives a text 'Test'", () => {
     test("Then it should show a button with 'Test' inside", async () => {
-      render(<Button type={"button"} classModifier={""} text={"Test"} />);
+      render(<Button type="button" classModifier="" text="Test" />);
 
       const button = screen.getByRole("button", {
         name: text,
@@ -26,9 +26,9 @@ describe("Given a Button component", () => {
     test("Then it should call the received action", async () => {
       render(
         <Button
-          type={"button"}
-          classModifier={""}
-          text={"Test"}
+          type="button"
+          classModifier=""
+          text="Test"
           actionOnClick={actionOnClick}
         />,
       );
