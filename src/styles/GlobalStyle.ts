@@ -37,5 +37,15 @@ h2 {
 button {
    cursor: pointer;
 }
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 `;
+
 export default GlobalStyle;
