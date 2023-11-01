@@ -15,7 +15,7 @@ const App = (): React.ReactElement => {
   }, [loadUnicorns]);
 
   return (
-    <>
+    <div className="main-container">
       <Header />
       <AppStyled>
         <Routes>
@@ -24,7 +24,7 @@ const App = (): React.ReactElement => {
         </Routes>
       </AppStyled>
       <NavMenu />
-    </>
+    </div>
   );
 };
 

@@ -1,27 +1,44 @@
 import styled from "styled-components";
 
-const NavMenuStyled = styled.div`
-  width: 100%;
+const NavMenuStyled = styled.nav`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
 
-  .nav-background {
-    width: 100%;
-    position: absolute;
-  }
-
-  .nav-container {
+  .button-container {
     display: flex;
     justify-content: center;
-    gap: 90px;
-    z-index: 1;
-    margin: 26px 0 0 10px;
+    align-items: center;
+    gap: 120px;
+    height: 100%;
+    z-index: 2;
+    margin-bottom: 10px;
+  }
+
+  .background-image {
+    width: 500px;
+    height: 100px;
+    position: fixed;
+    margin-top: -30px;
+    object-fit: cover;
   }
 
   .button {
+    height: 45px;
+  }
+
+  .icon {
     color: #361e58;
     width: 45px;
-    height: 45px;
+  }
+
+  .active {
+    border-bottom: solid 4px #361e58;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 3px;
   }
 `;
 
