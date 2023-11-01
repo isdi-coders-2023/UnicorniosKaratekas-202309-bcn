@@ -5,6 +5,10 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+html {
+  font-family: ${({ theme }) => theme.typography.mainFontFamily};
+}
+
 body {
   margin: 0;
   background-image: url("/images/background.webp");
