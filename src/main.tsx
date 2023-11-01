@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "@fontsource/libre-baskerville";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import "@fontsource/libre-baskerville";
