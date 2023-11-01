@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HeaderStyled = styled.div`
+const HeaderStyled = styled.header`
   width: 100%;
   display: flex;
   justify-content: center;

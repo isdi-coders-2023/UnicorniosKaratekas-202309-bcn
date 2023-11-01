@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const NavMenuStyled = styled.div`
+const NavMenuStyled = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@ const NavMenuStyled = styled.div`
     color: #361e58;
     width: 45px;
   }
+
   .active {
     border-bottom: solid 4px #361e58;
     border-bottom-right-radius: 10px;
