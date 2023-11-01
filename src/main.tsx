@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 import "@fontsource/libre-baskerville";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
@@ -8,8 +10,6 @@ import GlobalStyle from "./styles/GlobalStyle";
 import App from "./components/App/App";
 import mainTheme from "./styles/mainTheme";
 import UnicornProviderWrapper from "./features/unicorns/store/UnicornProviderWrapper";
-import React from "react";
-import ReactDOM from "react-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
