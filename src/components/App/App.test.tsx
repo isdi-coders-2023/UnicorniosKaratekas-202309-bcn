@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
 import App from "./App";
-import { BrowserRouter } from "react-router-dom";
-import UnicornProviderWrapper from "../features/unicorns/store/UnicornProviderWrapper";
+import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
 
 describe("Given an App component", () => {
   describe("When it's rendered", () => {

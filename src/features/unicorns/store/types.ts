@@ -1,4 +1,4 @@
-import { Unicorn } from "../../../../types";
+import { Unicorn } from "../../../types";
 
 interface UnicornContextStructure {
   unicorns: Unicorn[];

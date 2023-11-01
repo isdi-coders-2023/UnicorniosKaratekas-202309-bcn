@@ -1,14 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./components/App/App";
+import "@fontsource/libre-baskerville";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import "@fontsource/libre-baskerville";
 import "@fontsource/libre-baskerville/400.css";
 import "@fontsource/libre-baskerville/400-italic.css";
 import GlobalStyle from "./styles/GlobalStyle";
+import App from "./components/App/App";
 import mainTheme from "./styles/mainTheme";
-import UnicornProviderWrapper from "./components/features/unicorns/store/UnicornProviderWrapper";
+import UnicornProviderWrapper from "./features/unicorns/store/UnicornProviderWrapper";
+import React from "react";
+import ReactDOM from "react-dom";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
