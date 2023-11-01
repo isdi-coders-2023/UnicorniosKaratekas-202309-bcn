@@ -1,28 +1,16 @@
 import styled from "styled-components";
 
 const NavMenuStyled = styled.nav`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  position: relative;
-
   .button-container {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 95px;
+    background-image: url(/images/navBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+    background-position: center;
     align-items: center;
-    gap: 120px;
-    height: 100%;
-    z-index: 2;
-    margin-bottom: 10px;
-  }
-
-  .background-image {
-    width: 500px;
-    height: 100px;
-    position: fixed;
-    margin-top: -30px;
-    object-fit: cover;
   }
 
   .button {

@@ -8,23 +8,17 @@ const NavMenu = (): React.ReactElement => {
     <NavMenuStyled>
       <ul className="button-container">
         <li>
-          <NavLink className="icon" to="/unicorns">
+          <NavLink to="/unicorns">
             <FontAwesomeIcon className="icon button" icon={faHouse} />
           </NavLink>
         </li>
         <li>
-          <NavLink className="icon" to="/">
+          <NavLink to="/">
             <FontAwesomeIcon className="icon button" icon={faPlus} />
           </NavLink>
         </li>
       </ul>
-      <img
-        className="background-image"
-        src="/images/nav-background.svg"
-        alt="navigation menu background"
-        width="500"
-        height="95"
-      />
+      <div className="nav-background"></div>
     </NavMenuStyled>
   );
 };
