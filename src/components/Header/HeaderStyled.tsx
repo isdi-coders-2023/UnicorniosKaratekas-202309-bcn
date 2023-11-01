@@ -6,7 +6,7 @@ const HeaderStyled = styled.div`
   justify-content: center;
 
   .header {
-    width: 100%;
+    width: 500px;
     height: 190px;
     position: absolute;
   }
