@@ -1,6 +1,6 @@
-import { Unicorn } from "../types";
+import { Unicorn } from "../features/unicorns/store/types";
 
-const unicornMock: Unicorn[] = [
+export const unicornMock: Unicorn[] = [
   {
     id: 42,
     name: "Mr. Shy",

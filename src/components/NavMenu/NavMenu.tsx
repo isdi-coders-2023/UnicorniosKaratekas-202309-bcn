@@ -6,19 +6,18 @@ import { NavLink } from "react-router-dom";
 const NavMenu = (): React.ReactElement => {
   return (
     <NavMenuStyled>
-      <ul className="button-container">
+      <ul className="nav-container">
         <li>
-          <NavLink to="/unicorns">
-            <FontAwesomeIcon className="icon button" icon={faHouse} />
+          <NavLink aria-label="home" to="/unicorns">
+            <FontAwesomeIcon className="icon nav" icon={faHouse} />
           </NavLink>
         </li>
         <li>
-          <NavLink to="/">
-            <FontAwesomeIcon className="icon button" icon={faPlus} />
+          <NavLink aria-label="add" to="/">
+            <FontAwesomeIcon className="icon nav" icon={faPlus} />
           </NavLink>
         </li>
       </ul>
-      <div className="nav-background"></div>
     </NavMenuStyled>
   );
 };

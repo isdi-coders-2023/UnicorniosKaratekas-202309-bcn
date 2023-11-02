@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavMenuStyled = styled.nav`
-  .button-container {
+  .nav-container {
     display: flex;
     width: 100%;
     height: 95px;
@@ -13,7 +13,7 @@ const NavMenuStyled = styled.nav`
     align-items: center;
   }
 
-  .button {
+  .nav {
     height: 45px;
   }
 

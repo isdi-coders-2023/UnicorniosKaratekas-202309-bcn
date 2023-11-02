@@ -3,6 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 import "@testing-library/jest-dom";
 import App from "./App";
 import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
+import { ThemeProvider } from "styled-components";
+import mainTheme from "../../styles/mainTheme";
 
 describe("Given an App component", () => {
   describe("When it's rendered", () => {
@@ -12,7 +14,9 @@ describe("Given an App component", () => {
       render(
         <UnicornProviderWrapper>
           <BrowserRouter>
-            <App />
+            <ThemeProvider theme={mainTheme}>
+              <App />
+            </ThemeProvider>
           </BrowserRouter>
         </UnicornProviderWrapper>,
       );

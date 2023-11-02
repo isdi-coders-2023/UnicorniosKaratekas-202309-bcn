@@ -1,7 +1,9 @@
 import { http, HttpResponse } from "msw";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 export const handlers = [
-  http.get("https://unicorns-api-2-zdnv.onrender.com/unicorn", () => {
+  http.get(`${apiUrl}/unicorn`, () => {
     return HttpResponse.json([
       {
         id: 7,
