@@ -1,7 +1,7 @@
 import { http, HttpResponse } from "msw";
 
 export const handlers = [
-  http.get("https://unicorns-api-2-zdnv.onrender.com/unicorn", () => {
+  http.get("https://unicorns-api-2-zdnv.onrender.com/unicorn?_limit=10", () => {
     return HttpResponse.json([
       {
         id: 7,

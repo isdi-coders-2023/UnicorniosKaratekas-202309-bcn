@@ -1,9 +1,10 @@
+import { Unicorn } from "../types";
 import useUnicornsApi from "./useUnicornApi";
 
 describe("Given a get custom hook", () => {
   describe("When it fetches the url 'https://unicorns-api-2-zdnv.onrender.com/unicorn?_limit=10'", () => {
     test("Then it should return an array of Unicorns", async () => {
-      const expectedUnicorns = [
+      const expectedUnicorns: Unicorn[] = [
         {
           id: 7,
           name: "Spike",
