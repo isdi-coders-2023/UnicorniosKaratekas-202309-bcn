@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import unicornMock from "../../data/mockData";
+import unicorns from "../../data/unicorns";
 import UnicornContext from "../../features/unicorns/store/UnicornContext";
 import { Unicorn } from "../../features/unicorns/store/types";
 import UnicornCard from "../../components/UnicornCard/UnicornCard";
@@ -28,7 +28,7 @@ const UnicornListPage = (): React.ReactElement => {
   };
 
   useEffect(() => {
-    loadUnicorns(unicornMock);
+    loadUnicorns(unicorns);
   }, [loadUnicorns]);
 
   return (
