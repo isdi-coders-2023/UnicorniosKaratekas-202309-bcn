@@ -26,6 +26,7 @@ const LoadingStyled = styled.div`
     font-weight: 400;
     letter-spacing: -0.3px;
     text-transform: uppercase;
+    margin-left: 40px;
   }
 
   .loading__image {
@@ -33,6 +34,7 @@ const LoadingStyled = styled.div`
     height: 196px;
     flex-shrink: 0;
     margin-top: 155px;
+    margin-right: 10px;
   }
 `;
 
