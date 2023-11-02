@@ -46,7 +46,7 @@ describe("Given a get custom hook", () => {
 
       const currentUnicorns = await getUnicorns();
 
-      expect(currentUnicorns).toEqual(expectedUnicorns);
+      expect(currentUnicorns).toStrictEqual(expectedUnicorns);
     });
   });
 });
