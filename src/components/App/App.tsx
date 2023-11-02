@@ -6,7 +6,7 @@ import NavMenu from "../NavMenu/NavMenu";
 
 const App = (): React.ReactElement => {
   return (
-    <div className="main-container">
+    <>
       <Header />
       <AppStyled>
         <Routes>
@@ -15,7 +15,7 @@ const App = (): React.ReactElement => {
         </Routes>
       </AppStyled>
       <NavMenu />
-    </div>
+    </>
   );
 };
 
