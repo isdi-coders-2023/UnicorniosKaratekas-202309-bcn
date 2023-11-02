@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import UnicornListPage from "./UnicornListPage";
+import UnicornListPage from "./UnicornsList";
 import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
 
 describe("Given the unicorns list page", () => {
