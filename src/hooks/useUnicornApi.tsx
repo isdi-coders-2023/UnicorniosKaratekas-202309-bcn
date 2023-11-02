@@ -1,14 +1,17 @@
+import { useCallback, useContext } from "react";
+import UnicornContext from "../features/unicorns/store/UnicornContext";
 import { Unicorn } from "../features/unicorns/store/types";
 
-const apiUrl = import.meta.env.VITE_API_URL;
-
 const useUnicornsApi = () => {
-  const getUnicorns = async () => {
-    const response = await fetch(`${apiUrl}/unicorn?_limit=10`);
+  const apiUrl = import.meta.env.VITE_API_URL;
+  const { loadUnicorns } = useContext(UnicornContext);
+
+  const getUnicorns = useCallback(async () => {
+    const response = await fetch(`${apiUrl}?_limit=10`);
     const unicorns = (await response.json()) as Unicorn[];
 
-    return unicorns;
-  };
+    loadUnicorns(unicorns);
+  }, [apiUrl, loadUnicorns]);
 
   return {
     getUnicorns,
