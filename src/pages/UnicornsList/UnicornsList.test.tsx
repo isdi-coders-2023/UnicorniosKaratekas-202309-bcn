@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import UnicornListPage from "./UnicornListPage";
-import UnicornProviderWrapper from "../../components/features/unicorns/store/UnicornProviderWrapper";
+import UnicornListPage from "./UnicornsList";
+import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
 
 describe("Given the unicorns list page", () => {
   describe("When it's rendered", () => {
