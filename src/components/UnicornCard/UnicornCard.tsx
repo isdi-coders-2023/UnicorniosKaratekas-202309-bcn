@@ -1,4 +1,4 @@
-import { Unicorn } from "../../types";
+import { Unicorn } from "../../features/unicorns/store/types";
 import ButtonStyled from "../Button/ButtonStyled";
 import UnicornCardStyled from "./UnicornCardStyled";
 
