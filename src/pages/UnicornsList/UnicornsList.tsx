@@ -1,13 +1,13 @@
 import { useContext, useEffect } from "react";
 
-import unicornMock from "../../data/mockData";
+import unicorns from "../../data/unicorns";
 import UnicornContext from "../../features/unicorns/store/UnicornContext";
 
 const UnicornListPage = (): React.ReactElement => {
   const { loadUnicorns } = useContext(UnicornContext);
 
   useEffect(() => {
-    loadUnicorns(unicornMock);
+    loadUnicorns(unicorns);
   }, [loadUnicorns]);
 
   return <h1>Unicorns List</h1>;
