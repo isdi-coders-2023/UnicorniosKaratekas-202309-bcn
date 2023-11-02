@@ -6,7 +6,6 @@ import UnicornListPage from "../../pages/UnicornsList/UnicornsList";
 import NavMenu from "../NavMenu/NavMenu";
 import UnicornContext from "../../features/unicorns/store/UnicornContext";
 import unicorns from "../../data/unicorns";
-import Loading from "../Loading/Loading";
 
 const App = (): React.ReactElement => {
   const { loadUnicorns } = useContext(UnicornContext);
@@ -18,7 +17,6 @@ const App = (): React.ReactElement => {
   return (
     <div className="main-container">
       <Header />
-      <Loading />
       <AppStyled>
         <Routes>
           <Route path="/" element={<UnicornListPage />} />
