@@ -18,10 +18,10 @@ body {
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  } 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} 
 
 a {
   text-decoration: none;
@@ -31,15 +31,15 @@ a {
 button,
 input {
   font-family: inherit;
-  }
+}
 
 h1,
 h2 {
   margin: 0;
-  }
+}
 
 button {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 .main-container {
@@ -48,7 +48,6 @@ button {
   display: flex;
   flex-direction: column;
 }
-
 `;
 
 export default GlobalStyle;

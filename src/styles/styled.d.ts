@@ -4,6 +4,7 @@ declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
       yellow: string;
+      OpacityYellow: string;
       green: string;
       orange: string;
       pink: string;
@@ -15,6 +16,7 @@ declare module "styled-components" {
       dark: string;
       light: string;
       white: string;
+      darkButtons: string;
     };
   }
 }

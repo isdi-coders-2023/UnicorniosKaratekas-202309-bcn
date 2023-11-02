@@ -1,5 +1,5 @@
 import { PropsWithChildren, useCallback, useMemo, useState } from "react";
-import { Unicorn } from "../../../types";
+import { Unicorn } from "./types";
 import UnicornContext from "./UnicornContext";
 
 const UnicornProviderWrapper = ({

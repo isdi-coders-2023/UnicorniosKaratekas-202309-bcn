@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import UnicornContextStructure from "./types";
+import { UnicornContextStructure } from "./types";
 
 const UnicornContext = createContext<UnicornContextStructure>(
   {} as UnicornContextStructure,

@@ -1,4 +1,4 @@
-import { Unicorn } from "../types";
+import { Unicorn } from "../features/unicorns/store/types";
 
 const unicorns: Unicorn[] = [
   {
