@@ -1,4 +1,4 @@
-import { Unicorn } from "../types";
+import { Unicorn } from "../features/unicorns/store/types";
 import useUnicornsApi from "./useUnicornApi";
 
 describe("Given a get custom hook", () => {
