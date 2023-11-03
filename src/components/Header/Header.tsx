@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <HeaderStyled>
       <div className="header-background">
-        <div className="corner-left"></div>
-        <div className="middle"></div>
-        <div className="corner-right"></div>
+        <div className="header-background__corner-left"></div>
+        <div className="header-background__middle"></div>
+        <div className="header-background__corner-right"></div>
       </div>
       <img
         className="logo-image"

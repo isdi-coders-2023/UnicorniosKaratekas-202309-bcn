@@ -10,28 +10,28 @@ const HeaderStyled = styled.header`
     width: 100%;
     height: 122px;
     display: flex;
-  }
 
-  .corner-left {
-    width: 137px;
-    background-image: url("/images/headerLeft.png");
-    background-repeat: no-repeat;
-    background-position-x: right;
-  }
+    &__corner-left {
+      width: 137px;
+      background-image: url("/images/headerLeft.png");
+      background-repeat: no-repeat;
+      background-position-x: right;
+    }
 
-  .middle {
-    width: 100%;
-    background-image: url(/images/headerMid.png);
-    background-repeat: round;
-    background-size: cover;
-    position: relative;
-  }
+    &__middle {
+      width: 100%;
+      background-image: url(/images/headerMid.png);
+      background-repeat: round;
+      background-size: cover;
+      position: relative;
+    }
 
-  .corner-right {
-    width: 137px;
-    background-image: url("/images/headerRight.png");
-    background-repeat: no-repeat;
-    background-position-x: left;
+    &__corner-right {
+      width: 137px;
+      background-image: url("/images/headerRight.png");
+      background-repeat: no-repeat;
+      background-position-x: left;
+    }
   }
 
   .logo-image {
