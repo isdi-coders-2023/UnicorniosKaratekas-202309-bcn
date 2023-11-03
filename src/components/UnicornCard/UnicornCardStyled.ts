@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const UnicornCardStyled = styled.div`
+  position: relative;
   background: ${({ theme }) => theme.colors.OpacityYellow};
-
+  z-index: -1;
   border-radius: 30px;
   width: 326px;
   height: 609px;
