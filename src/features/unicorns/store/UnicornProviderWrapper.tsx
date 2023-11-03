@@ -7,8 +7,8 @@ const UnicornProviderWrapper = ({
 }: PropsWithChildren): React.ReactElement => {
   const [unicorns, setUnicorns] = useState<Unicorn[]>([]);
 
-  const loadUnicorns = useCallback((unicorns: Unicorn[]) => {
-    setUnicorns(unicorns);
+  const loadUnicorns = useCallback((unicorns: Unicorn[] | undefined) => {
+    setUnicorns(unicorns as Unicorn[]);
   }, []);
 
   const unicornsProvider = useMemo(

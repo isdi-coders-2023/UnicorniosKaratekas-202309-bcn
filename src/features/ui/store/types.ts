@@ -1,6 +1,6 @@
 interface UiContextStructure {
   isLoading: boolean;
-  setIsLoading: (isLoading: boolean) => void;
+  setIsLoading: (isLoadnig: boolean) => void;
 }
 
 export default UiContextStructure;
