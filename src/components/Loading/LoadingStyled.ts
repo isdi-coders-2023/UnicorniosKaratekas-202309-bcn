@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const LoadingStyled = styled.div`
-  width: 390px;
-  height: 908px;
+  z-index: 3;
+  height: 100%;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
