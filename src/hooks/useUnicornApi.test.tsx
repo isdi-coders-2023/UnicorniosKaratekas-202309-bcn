@@ -1,4 +1,4 @@
-import unicorns from "../data/unicorns";
+import unicorns from "../mocks/mockData";
 import { renderHook } from "@testing-library/react";
 import { Unicorn } from "../features/unicorns/store/types";
 
