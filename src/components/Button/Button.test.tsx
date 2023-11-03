@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Button from "./Button";
+import { ThemeProvider } from "styled-components";
+import mainTheme from "../../styles/mainTheme";
 
 beforeEach(() => {
   vi.resetAllMocks();
@@ -12,7 +14,11 @@ describe("Given a Button component", () => {
 
   describe("When it receives a text 'Test'", () => {
     test("Then it should show a button with 'Test' inside", async () => {
-      render(<Button type="button" classModifier="" text="Test" />);
+      render(
+        <ThemeProvider theme={mainTheme}>
+          <Button type="button" classModifier="" text="Test" />
+        </ThemeProvider>,
+      );
 
       const button = screen.getByRole("button", {
         name: text,
@@ -25,12 +31,15 @@ describe("Given a Button component", () => {
   describe("When it receives an action and the user clicks the button", () => {
     test("Then it should call the received action", async () => {
       render(
-        <Button
-          type="button"
-          classModifier=""
-          text="Test"
-          actionOnClick={actionOnClick}
-        />,
+        <ThemeProvider theme={mainTheme}>
+          <Button
+            type="button"
+            classModifier=""
+            text="Test"
+            actionOnClick={actionOnClick}
+          />
+          ,
+        </ThemeProvider>,
       );
 
       const button = screen.getByRole("button", {
