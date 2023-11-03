@@ -15,12 +15,11 @@ const Button = ({
 }: ButtonProps): React.ReactElement => {
   return (
     <ButtonStyled
-      className={`button ${classModifier}`}
+      className={`buttonsact${classModifier}`}
       type={type}
       onClick={actionOnClick}
-    >
-      {text}
-    </ButtonStyled>
+      children={text}
+    />
   );
 };
 
