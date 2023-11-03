@@ -1,16 +1,18 @@
-import { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 
 import useUnicornsApi from "../../hooks/useUnicornApi";
 import UnicornsList from "../../components/UnicornsList/UnicornsList";
+import UnicornContext from "../../features/unicorns/store/UnicornContext";
 
 const UnicornListPage = (): React.ReactElement => {
   const { getUnicorns } = useUnicornsApi();
+  const { loadUnicorns } = useContext(UnicornContext);
 
   useEffect(() => {
     (async () => {
-      await getUnicorns();
+      loadUnicorns(await getUnicorns());
     })();
-  }, [getUnicorns]);
+  }, [getUnicorns, loadUnicorns]);
 
   return (
     <>

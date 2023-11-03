@@ -8,9 +8,9 @@ const UnicornsList = (): React.ReactElement => {
   const { unicorns } = useContext(UnicornContext);
 
   return (
-    <UnicornsListStyled>
+    <UnicornsListStyled title="unicorns-list">
       {unicorns.map((unicorn: Unicorn) => (
-        <li key={unicorn.id}>
+        <li title={unicorn.name} key={unicorn.id}>
           <UnicornCard unicorn={unicorn} />
         </li>
       ))}
