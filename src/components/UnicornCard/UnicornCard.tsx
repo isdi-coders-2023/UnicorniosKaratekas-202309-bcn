@@ -1,5 +1,5 @@
 import { Unicorn } from "../../features/unicorns/store/types";
-import ButtonStyled from "../Button/ButtonStyled";
+import Button from "../Button/Button";
 import UnicornCardStyled from "./UnicornCardStyled";
 
 interface UnicornCardProps {
@@ -19,22 +19,22 @@ const UnicornCard = ({
         height="253"
       />
       <div className="unicorn-name">
-        <h2 className="unicorn-name--text">{name}</h2>
+        <h2 className="unicorn-name__text">{name}</h2>
       </div>
       <ul className="unicorn-list">
-        <li className="unicorn-list--kind">{kind[0]}</li>
-        <li className="unicorn-list--sex">{sex}</li>
+        <li className="unicorn-list__kind">{kind[0]}</li>
+        <li className="unicorn-list__sex">{sex}</li>
       </ul>
       <div className="buttons-container">
-        <ButtonStyled type="button" className="buttons-container__button">
+        <Button type="button" className="buttons-container__button">
           <span className="buttons-container__text">Detail</span>
-        </ButtonStyled>
-        <ButtonStyled type="button" className="buttons-container__button">
+        </Button>
+        <Button type="button" className="buttons-container__button">
           <span className="buttons-container__text">Modify</span>
-        </ButtonStyled>
-        <ButtonStyled type="button" className="buttons-container__button">
+        </Button>
+        <Button type="button" className="buttons-container__button">
           <span className="buttons-container__text">Delete</span>
-        </ButtonStyled>
+        </Button>
       </div>
     </UnicornCardStyled>
   );

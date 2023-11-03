@@ -7,13 +7,12 @@ const UnicornCardStyled = styled.div`
   border-radius: 30px;
   width: 326px;
   height: 609px;
-  flex-shrink: 0;
   box-shadow: 0px 0px 25px -10px rgba(218, 218, 218, 0.5);
   margin-top: 35px;
 
   .unicorn-image {
     width: 281px;
-    height: 253px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 30px;
     margin-left: 23px;
@@ -25,7 +24,7 @@ const UnicornCardStyled = styled.div`
     width: 276px;
     height: 42px;
 
-    &--text {
+    &__text {
       color: ${({ theme }) => theme.typography.dark};
       display: flex;
       align-items: center;
@@ -44,11 +43,11 @@ const UnicornCardStyled = styled.div`
     align-items: center;
     margin-top: 3px;
 
-    &--kind {
+    &__kind {
       margin-bottom: 2px;
     }
 
-    &--sex {
+    &__sex {
       margin-bottom: 17.5px;
     }
   }
