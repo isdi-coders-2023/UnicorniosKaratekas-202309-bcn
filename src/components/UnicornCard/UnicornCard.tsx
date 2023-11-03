@@ -25,16 +25,25 @@ const UnicornCard = ({
         <li className="unicorn-list__kind">{kind[0]}</li>
         <li className="unicorn-list__sex">{sex}</li>
       </ul>
-      <div className="buttons-container">
-        <Button type="button" className="buttons-container__button">
-          <span className="buttons-container__text">Detail</span>
-        </Button>
-        <Button type="button" className="buttons-container__button">
-          <span className="buttons-container__text">Modify</span>
-        </Button>
-        <Button type="button" className="buttons-container__button">
-          <span className="buttons-container__text">Delete</span>
-        </Button>
+      <div className="buttons">
+        <Button
+          text="Details"
+          type="button"
+          classModifier=""
+          actionOnClick={undefined}
+        />
+        <Button
+          text="Modify"
+          type="button"
+          classModifier=""
+          actionOnClick={undefined}
+        />
+        <Button
+          text="Delete"
+          type="button"
+          classModifier=""
+          actionOnClick={undefined}
+        />
       </div>
     </UnicornCardStyled>
   );
