@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
+import { ThemeProvider } from "styled-components";
 import userEvent from "@testing-library/user-event";
 import Button from "./Button";
-import { ThemeProvider } from "styled-components";
 import mainTheme from "../../styles/mainTheme";
 
 beforeEach(() => {

@@ -7,6 +7,8 @@ const Loading = (): React.ReactElement => {
         className="loading__image"
         src="./images/loading-unicorn.webp"
         alt="page is loading icon with a unicorn"
+        width="512"
+        height="512"
       />
       <span className="loading__text">loading...</span>
     </LoadingStyled>
