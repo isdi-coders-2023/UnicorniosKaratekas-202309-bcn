@@ -1,9 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
 import "@testing-library/jest-dom";
+
 import App from "./App";
 import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
-import { ThemeProvider } from "styled-components";
 import mainTheme from "../../styles/mainTheme";
 
 describe("Given an App component", () => {
