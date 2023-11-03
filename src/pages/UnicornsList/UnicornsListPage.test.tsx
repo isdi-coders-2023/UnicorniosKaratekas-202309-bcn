@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import UnicornListPage from "./UnicornsList";
+import UnicornListPage from "./UnicornsListPage";
 import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
 import { ThemeProvider } from "styled-components";
 import mainTheme from "../../styles/mainTheme";

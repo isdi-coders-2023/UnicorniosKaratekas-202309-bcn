@@ -1,12 +1,12 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import AppStyled from "./AppStyled";
 import Header from "../Header/Header";
-import UnicornListPage from "../../pages/UnicornsList/UnicornsList";
+import UnicornListPage from "../../pages/UnicornsList/UnicornsListPage";
 import NavMenu from "../NavMenu/NavMenu";
 
 const App = (): React.ReactElement => {
   return (
-    <div className="main-container">
+    <>
       <Header />
       <AppStyled>
         <Routes>
@@ -15,7 +15,7 @@ const App = (): React.ReactElement => {
         </Routes>
       </AppStyled>
       <NavMenu />
-    </div>
+    </>
   );
 };
 

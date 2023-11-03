@@ -10,7 +10,7 @@ const UnicornCard = ({
   unicorn: { name, sex, kind, image },
 }: UnicornCardProps): React.ReactElement => {
   return (
-    <UnicornCardStyled className="unicorn-card">
+    <UnicornCardStyled className="unicorn-card" title={name}>
       <img
         className="unicorn-image"
         src={image[0]}
