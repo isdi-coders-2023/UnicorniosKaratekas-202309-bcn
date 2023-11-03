@@ -1,4 +1,6 @@
+import { renderHook } from "@testing-library/react";
 import { Unicorn } from "../features/unicorns/store/types";
+
 import useUnicornsApi from "./useUnicornApi";
 
 describe("Given a get custom hook", () => {
@@ -43,9 +45,9 @@ describe("Given a get custom hook", () => {
         },
       ];
 
-      const { getUnicorns } = useUnicornsApi();
+      const { result } = renderHook(() => useUnicornsApi());
 
-      const currentUnicorns = await getUnicorns();
+      const currentUnicorns = await result.current.getUnicorns();
 
       expect(currentUnicorns).toStrictEqual(expectedUnicorns);
     });

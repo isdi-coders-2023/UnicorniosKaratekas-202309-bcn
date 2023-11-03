@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 const NavMenuStyled = styled.nav`
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 95px;
+
   .nav-container {
     display: flex;
     width: 100%;
-    height: 95px;
+    height: 100%;
     background-image: url(/images/navBackground.png);
     background-size: cover;
     background-repeat: no-repeat;
