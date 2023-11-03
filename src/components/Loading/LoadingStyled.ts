@@ -20,7 +20,7 @@ const LoadingStyled = styled.div`
     font-feature-settings:
       "clig" off,
       "liga" off;
-    font-family: Lilita One;
+    font-family: ${({ theme }) => theme.typography.secondaryFontFamily};
     font-size: 48px;
     font-style: normal;
     font-weight: 400;

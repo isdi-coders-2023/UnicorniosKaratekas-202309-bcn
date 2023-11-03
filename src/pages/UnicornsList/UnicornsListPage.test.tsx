@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
+import { ThemeProvider } from "styled-components";
 import UnicornListPage from "./UnicornsListPage";
 import UnicornProviderWrapper from "../../features/unicorns/store/UnicornProviderWrapper";
-import { ThemeProvider } from "styled-components";
 import mainTheme from "../../styles/mainTheme";
 
 describe("Given the unicorns list page", () => {

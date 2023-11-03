@@ -9,16 +9,19 @@ import GlobalStyle from "./styles/GlobalStyle";
 import App from "./components/App/App";
 import mainTheme from "./styles/mainTheme";
 import UnicornProviderWrapper from "./features/unicorns/store/UnicornProviderWrapper";
+import UiContextWrapper from "./features/ui/store/UiContextWrapper";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <UnicornProviderWrapper>
-      <BrowserRouter>
-        <ThemeProvider theme={mainTheme}>
-          <GlobalStyle />
-          <App />
-        </ThemeProvider>
-      </BrowserRouter>
-    </UnicornProviderWrapper>
+    <UiContextWrapper>
+      <UnicornProviderWrapper>
+        <BrowserRouter>
+          <ThemeProvider theme={mainTheme}>
+            <GlobalStyle />
+            <App />
+          </ThemeProvider>
+        </BrowserRouter>
+      </UnicornProviderWrapper>
+    </UiContextWrapper>
   </React.StrictMode>,
 );
