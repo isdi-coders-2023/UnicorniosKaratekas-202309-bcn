@@ -6,6 +6,7 @@ const HeaderStyled = styled.header`
   position: fixed;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 
   .header-background {
     width: 100%;

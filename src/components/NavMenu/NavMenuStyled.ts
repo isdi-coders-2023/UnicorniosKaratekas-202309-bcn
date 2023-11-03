@@ -5,6 +5,7 @@ const NavMenuStyled = styled.nav`
   position: fixed;
   width: 100%;
   height: 95px;
+  z-index: 1;
 
   .nav-container {
     display: flex;

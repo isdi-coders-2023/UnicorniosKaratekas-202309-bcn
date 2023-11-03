@@ -6,7 +6,7 @@ const UnicornCardStyled = styled.div`
   align-items: center;
   position: relative;
   background: ${({ theme }) => theme.colors.OpacityYellow};
-  z-index: -1;
+  z-index: 0;
   border-radius: 30px;
   width: 326px;
   box-shadow: 0px 0px 25px -10px rgba(218, 218, 218, 0.5);
